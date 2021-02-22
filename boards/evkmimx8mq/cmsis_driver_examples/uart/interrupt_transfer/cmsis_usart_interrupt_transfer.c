@@ -14,7 +14,7 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-#define DEMO_USART Driver_USART2
+#define DEMO_USART Driver_USART3
 #define ECHO_BUFFER_LENGTH 8
 /*******************************************************************************
  * Prototypes
@@ -37,7 +37,7 @@ volatile bool rxOnGoing                = false;
  * Code
  ******************************************************************************/
 
-uint32_t UART2_GetFreq(void)
+uint32_t UART3_GetFreq(void)
 {
     return BOARD_DEBUG_UART_CLK_FREQ;
 }
