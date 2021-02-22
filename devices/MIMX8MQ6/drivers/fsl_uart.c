@@ -212,7 +212,7 @@ status_t UART_Init(UART_Type *base, const uart_config_t *config, uint32_t srcClo
     base->UCR2  = UART_UCR2_SRST_MASK;
     base->UCR3  = UART_UCR3_DSR_MASK | UART_UCR3_DCD_MASK | UART_UCR3_RI_MASK;
     base->UCR4  = UART_UCR4_CTSTL(32);
-    base->UFCR  = UART_UFCR_TXTL(2) | UART_UFCR_RXTL(1);
+    base->UFCR  = UART_UFCR_TXTL(2) | UART_UFCR_RXTL(1) | UART_UFCR_DCEDTE(1);
     base->UESC  = UART_UESC_ESC_CHAR(0x2B);
     base->UTIM  = 0x0;
     base->ONEMS = 0x0;
